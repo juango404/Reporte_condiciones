@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ECO GOLD MINING SAS - Reporte de Condiciones de Seguridad. Plataforma oficial para el reporte de condiciones inseguras en operaciones mineras." />
+  <meta name="keywords" content="ECO GOLD MINING, seguridad minera, reporte condiciones inseguras, SST, minería Colombia" />
+  <meta name="author" content="ECO GOLD MINING SAS" />
+  <meta property="og:title" content="ECO GOLD MINING SAS - Reporte de Seguridad" />
+  <meta property="og:description" content="Sistema de reporte de condiciones inseguras para ECO GOLD MINING SAS" />
+  <title>ECO GOLD MINING SAS | Reporte de Condiciones de Seguridad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <div class="nav__brand">
+        <img src="logo.png" alt="ECO GOLD MINING Logo" class="nav__logo" />
+        <div class="nav__title">
+          <span class="nav__company">ECO GOLD MINING</span>
+          <span class="nav__sas">SAS</span>
+        </div>
+      </div>
+      <div class="nav__badge">
+        <span class="badge badge--safety">🦺 Sistema SST</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" aria-label="Sección principal">
+    <div class="hero__particles" id="particles"></div>
+    <div class="hero__content container">
+      <div class="hero__text">
+        <div class="hero__eyebrow">
+          <span class="dot dot--orange"></span>
+          Sistema de Gestión de Seguridad y Salud en el Trabajo
+        </div>
+        <h1 class="hero__heading">
+          Reporta Condiciones<br />
+          <span class="hero__highlight">Inseguras</span> al Instante
+        </h1>
+        <p class="hero__sub">
+          Tu reporte hace la diferencia. Ayúdanos a construir un ambiente de trabajo
+          más seguro en ECO GOLD MINING SAS.
+        </p>
+        <a href="#formulario" class="btn btn--primary hero__cta" id="hero-cta-btn">
+          <span>Hacer un Reporte</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-card" id="stat-seguridad">
+          <span class="stat-card__icon">⛑️</span>
+          <span class="stat-card__number">100%</span>
+          <span class="stat-card__label">Comprometidos con la Seguridad</span>
+        </div>
+        <div class="stat-card" id="stat-reportes">
+          <span class="stat-card__icon">📋</span>
+          <span class="stat-card__number">24/7</span>
+          <span class="stat-card__label">Recepción de Reportes</span>
+        </div>
+        <div class="stat-card" id="stat-respuesta">
+          <span class="stat-card__icon">⚡</span>
+          <span class="stat-card__number">Rápido</span>
+          <span class="stat-card__label">Tiempo de Respuesta</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Desplázate</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES STRIP ===== -->
+  <section class="features-strip" aria-label="Características del sistema">
+    <div class="container features-strip__grid">
+      <div class="feature-item">
+        <span class="feature-item__icon">🔒</span>
+        <span class="feature-item__text">Información Segura</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-item__icon">📊</span>
+        <span class="feature-item__text">Registro en Tiempo Real</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-item__icon">📸</span>
+        <span class="feature-item__text">Soporte Fotográfico</span>
+      </div>
+      <div class="feature-item">
+        <span class="feature-item__icon">✅</span>
+        <span class="feature-item__text">Trazabilidad Completa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN FORM SECTION ===== -->
+  <section class="form-section" id="formulario" aria-label="Formulario de reporte">
+    <div class="container">
+
+      <!-- Form Header -->
+      <div class="section-header">
+        <span class="section-header__tag">Formulario Oficial</span>
+        <h2 class="section-header__title">Reporte de Condiciones<br /><span class="text-orange">de Seguridad</span></h2>
+        <p class="section-header__sub">
+          Complete todos los campos con información precisa. Su reporte será
+          registrado de forma inmediata en nuestra base de datos.
+        </p>
+      </div>
+
+      <!-- Form Card -->
+      <div class="form-card">
+        <div class="form-card__header">
+          <div class="form-card__header-left">
+            <img src="logo.png" alt="ECO GOLD MINING" class="form-card__logo" />
+            <div>
+              <p class="form-card__company">ECO GOLD MINING SAS</p>
+              <p class="form-card__subtitle">Sistema de Salud y Seguridad en el Trabajo</p>
+            </div>
+          </div>
+          <div class="form-card__badge">
+            <span>SST</span>
+          </div>
+        </div>
+
+        <form id="safety-report-form" class="report-form" novalidate>
+
+          <!-- Row 1: Fecha + Nombre -->
+          <div class="form-row form-row--2">
+            <div class="form-group" id="group-fecha">
+              <label for="fecha" class="form-label">
+                <span class="form-label__icon">📅</span>
+                Fecha del Registro
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="date"
+                id="fecha"
+                name="fecha"
+                class="form-input"
+                required
+                aria-required="true"
+                aria-describedby="fecha-error"
+              />
+              <span class="form-error" id="fecha-error" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="group-nombre">
+              <label for="nombre" class="form-label">
+                <span class="form-label__icon">👤</span>
+                Nombre Completo
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                class="form-input"
+                placeholder="Nombres y apellidos completos"
+                required
+                aria-required="true"
+                aria-describedby="nombre-error"
+                autocomplete="name"
+              />
+              <span class="form-error" id="nombre-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Row 2: Identificación + Cargo -->
+          <div class="form-row form-row--2">
+            <div class="form-group" id="group-identificacion">
+              <label for="identificacion" class="form-label">
+                <span class="form-label__icon">🪪</span>
+                Número de Identificación
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="text"
+                id="identificacion"
+                name="identificacion"
+                class="form-input"
+                placeholder="Ej: 1234567890"
+                required
+                aria-required="true"
+                aria-describedby="identificacion-error"
+                inputmode="numeric"
+                pattern="[0-9]+"
+              />
+              <span class="form-error" id="identificacion-error" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="group-cargo">
+              <label for="cargo" class="form-label">
+                <span class="form-label__icon">⛏️</span>
+                Cargo
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="text"
+                id="cargo"
+                name="cargo"
+                class="form-input"
+                placeholder="Ej: Frentero, Operador, Supervisor"
+                required
+                aria-required="true"
+                aria-describedby="cargo-error"
+              />
+              <span class="form-error" id="cargo-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Row 3: Área + Correo -->
+          <div class="form-row form-row--2">
+            <div class="form-group" id="group-area">
+              <label for="area" class="form-label">
+                <span class="form-label__icon">🏭</span>
+                Área
+                <span class="form-label__required">*</span>
+              </label>
+              <div class="select-wrapper">
+                <select
+                  id="area"
+                  name="area"
+                  class="form-input form-select"
+                  required
+                  aria-required="true"
+                  aria-describedby="area-error"
+                >
+                  <option value="" disabled selected>Selecciona un área...</option>
+                  <option value="Mina">⛏️ Mina</option>
+                  <option value="Soldadura">🔥 Soldadura</option>
+                  <option value="Obra Civil">🏗️ Obra Civil</option>
+                  <option value="Mantenimiento Electromecánico">⚙️ Mantenimiento Electromecánico</option>
+                  <option value="Almacén">📦 Almacén</option>
+                  <option value="Casino">🍽️ Casino</option>
+                  <option value="Ambiental">🌿 Ambiental</option>
+                  <option value="Geología">🪨 Geología</option>
+                  <option value="SST">🦺 SST</option>
+                </select>
+                <span class="select-arrow" aria-hidden="true">▾</span>
+              </div>
+              <span class="form-error" id="area-error" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="group-correo">
+              <label for="correo" class="form-label">
+                <span class="form-label__icon">✉️</span>
+                Correo Electrónico
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                class="form-input"
+                placeholder="ejemplo@ecoGoldMining.com"
+                required
+                aria-required="true"
+                aria-describedby="correo-error"
+                autocomplete="email"
+              />
+              <span class="form-error" id="correo-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Row 4: Descripción (full width) -->
+          <div class="form-row form-row--1">
+            <div class="form-group" id="group-descripcion">
+              <label for="descripcion" class="form-label">
+                <span class="form-label__icon">📝</span>
+                Descripción de la Condición Insegura
+                <span class="form-label__required">*</span>
+              </label>
+              <textarea
+                id="descripcion"
+                name="descripcion"
+                class="form-input form-textarea"
+                placeholder="Describa detalladamente la condición insegura observada: qué vio, dónde estaba, qué riesgo representa..."
+                rows="5"
+                required
+                aria-required="true"
+                aria-describedby="descripcion-error"
+                maxlength="2000"
+              ></textarea>
+              <div class="textarea-footer">
+                <span class="form-error" id="descripcion-error" role="alert"></span>
+                <span class="char-counter" id="char-counter" aria-live="polite">0 / 2000</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 5: Ubicación + Foto -->
+          <div class="form-row form-row--2">
+            <div class="form-group" id="group-ubicacion">
+              <label for="ubicacion" class="form-label">
+                <span class="form-label__icon">📍</span>
+                Ubicación de la Zona
+                <span class="form-label__required">*</span>
+              </label>
+              <input
+                type="text"
+                id="ubicacion"
+                name="ubicacion"
+                class="form-input"
+                placeholder="Ej: Nivel 3 - Galería Norte, Taller de Mantenimiento"
+                required
+                aria-required="true"
+                aria-describedby="ubicacion-error"
+              />
+              <span class="form-error" id="ubicacion-error" role="alert"></span>
+            </div>
+
+            <div class="form-group" id="group-foto">
+              <label for="foto" class="form-label">
+                <span class="form-label__icon">📷</span>
+                Foto de la Condición Insegura
+                <span class="form-label__optional">(Opcional)</span>
+              </label>
+              <div class="file-upload-wrapper" id="file-upload-wrapper">
+                <input
+                  type="file"
+                  id="foto"
+                  name="foto"
+                  class="file-input"
+                  accept="image/*"
+                  aria-describedby="foto-hint"
+                  capture="environment"
+                />
+                <label for="foto" class="file-upload-label" id="file-upload-label">
+                  <span class="file-upload-icon">📁</span>
+                  <span class="file-upload-text" id="file-upload-text">
+                    Haz clic o arrastra una imagen aquí
+                  </span>
+                  <span class="file-upload-hint" id="foto-hint">JPG, PNG, HEIC — Máx. 10MB</span>
+                </label>
+                <div class="file-preview" id="file-preview" style="display:none;">
+                  <img id="preview-img" src="" alt="Vista previa de la condición" />
+                  <button type="button" class="file-remove-btn" id="file-remove-btn" aria-label="Eliminar imagen">✕</button>
+                </div>
+              </div>
+              <span class="form-error" id="foto-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Declaration Checkbox -->
+          <div class="form-row form-row--1">
+            <div class="form-group form-group--checkbox" id="group-declaracion">
+              <label class="checkbox-label" for="declaracion">
+                <input
+                  type="checkbox"
+                  id="declaracion"
+                  name="declaracion"
+                  class="checkbox-input"
+                  required
+                  aria-required="true"
+                  aria-describedby="declaracion-error"
+                />
+                <span class="checkbox-custom" aria-hidden="true"></span>
+                <span class="checkbox-text">
+                  Declaro que toda la información suministrada es <strong>verídica</strong> y fue
+                  registrada de buena fe en cumplimiento de las normas de Seguridad y Salud en el
+                  Trabajo de <strong>ECO GOLD MINING SAS</strong>.
+                </span>
+              </label>
+              <span class="form-error" id="declaracion-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-row form-row--1 form-row--center">
+            <button type="submit" class="btn btn--primary btn--large btn--submit" id="submit-btn">
+              <span class="btn__text">Enviar Reporte</span>
+              <span class="btn__icon">🚀</span>
+              <span class="btn__spinner" id="btn-spinner" style="display:none;">⏳</span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Success Message (hidden by default) -->
+        <div class="success-message" id="success-message" style="display:none;" role="status" aria-live="polite">
+          <div class="success-message__icon">✅</div>
+          <h3 class="success-message__title">¡Reporte Enviado Exitosamente!</h3>
+          <p class="success-message__text">
+            Tu reporte ha sido registrado correctamente en nuestro sistema. El equipo de SST
+            tomará las acciones necesarias a la brevedad posible.
+          </p>
+          <button class="btn btn--outline" id="new-report-btn">Enviar Otro Reporte</button>
+        </div>
+
+        <!-- Error Message (hidden by default) -->
+        <div class="error-banner" id="error-banner" style="display:none;" role="alert">
+          <span>⚠️</span>
+          <span id="error-banner-text">Ocurrió un error al enviar el reporte. Por favor intente nuevamente.</span>
+        </div>
+
+      </div><!-- /.form-card -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="logo.png" alt="ECO GOLD MINING SAS" class="footer__logo" />
+        <div>
+          <p class="footer__company">ECO GOLD MINING SAS</p>
+          <p class="footer__tagline">Minería Responsable &amp; Segura</p>
+        </div>
+      </div>
+      <div class="footer__center">
+        <p class="footer__legal">
+          Sistema de Gestión de Seguridad y Salud en el Trabajo — SST
+        </p>
+        <p class="footer__copy">
+          &copy; <span id="year"></span> ECO GOLD MINING SAS. Todos los derechos reservados.
+        </p>
+      </div>
+      <div class="footer__badge">
+        <span class="badge badge--footer">🌿 Minería Responsable</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
